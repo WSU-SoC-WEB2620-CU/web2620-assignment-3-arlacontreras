@@ -1,1 +1,69 @@
 // Your styles go here
+header,
+aside,
+footer {
+  margin-bottom: 10px;
+}
+// Header Styling
+.header,
+.footer {
+  height: 40px;
+}
+.melonGroup {
+  margin-top: 10px;
+  display: grid;
+  gap: 5px;
+}
+// Main Styling
+.alignSides {
+  display: grid;
+  margin-top: 10px;
+}
+.mainContent {
+  height: 300px;
+}
+// Aside Styling
+.asideContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.asideBoxes {
+  grid-column: span 2;
+}
+.aside {
+  margin-bottom: 5px;
+  height: 40px;
+  gap: 10px;
+}
+.asideLast {
+  height: 40px;
+  margin-bottom: 0;
+}
+.asideBigBox {
+  grid-column: span 2;
+}
+
+// Color Declarations
+.melon {
+  background-color: #f0b7b3;
+  color: #f0b7b3;
+}
+.celadon {
+  background-color: #b8ebd0;
+  color: #b8ebd0;
+}
+
+// Tablet 500px - 800px
+@media all and (min-width: 500px) {
+  // Header Styling
+  .header,
+  .footer {
+    height: 70px;
+  }
+}
+
+// Desktop 800px+
+@media all and (min-width: 800px) {
+}
