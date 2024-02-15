@@ -62,8 +62,66 @@ footer {
   .footer {
     height: 70px;
   }
+  .melonGroup {
+    grid-template-columns: repeat(5, 1fr);
+    height: 40px;
+  }
+  // Aside Styling
+  .asideContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .asideBoxes {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .aside,
+  .asideLast {
+    margin-bottom: 0;
+    height: 70px;
+  }
 }
 
 // Desktop 800px+
 @media all and (min-width: 800px) {
+  // Header
+  .melonGroup {
+    gap: 40px;
+  }
+  // Main Styling
+  .alignSides {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .alignSides > main {
+    grid-column: span 3;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  // Aside Styling
+  .asideContainer {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+  }
+  .asideBoxes {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .asideBigBox {
+    order: -1;
+    grid-column: span 3;
+    height: 125px;
+  }
+  .aside,
+  .asideLast {
+    margin-bottom: 0;
+    height: 70px;
+  }
 }
